@@ -1,0 +1,75 @@
+.header__container {
+  min-height: 3rem;
+  width: 100%;
+  min-width: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header__title {
+  min-height: 3rem;
+  width: 9rem;
+}
+
+.header__hamburger {
+  min-height: 3rem;
+  width: 3rem;
+  cursor: pointer;
+}
+
+.header__menu {
+  min-height: 3rem;
+  width: 100%;
+  position: absolute;
+  top: 3rem;
+  display: flex;
+  flex-direction: column;
+  height: calc(100dvh - 3rem);
+}
+
+.menu__container {
+  min-height: 3rem;
+  width: 100%;
+  flex: 0 1 auto;
+  cursor: pointer;
+}
+
+.menu__closer {
+  min-height: 3rem;
+  width: 100%;
+  flex: 1 1 auto;
+  cursor: pointer;
+}
+
+/* second lvl stuff */
+.menu__item {
+  min-height: 3rem;
+  width: 100%;
+}
+
+/* Research list all the methods to hide something. */
+/* CAUTION : this mf#*? must be put here or else problems arise, proceed carefully! */
+.hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .header__hamburger {
+    display: none;
+  }
+
+  .header__menu {
+    all: unset;
+  }
+
+  .menu__container {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .menu__closer {
+    display: none;
+  }
+}
