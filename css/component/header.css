@@ -19,8 +19,8 @@
   cursor: pointer;
 }
 
-/* wraps the menu and the closer together to show/hide them together */
-.nav__inner-wrapper {
+/* wraps the menu and the closer to show/hide them together */
+.nav__wrapper {
   min-height: 3rem;
   width: 100%;
   position: absolute;
@@ -51,18 +51,12 @@
   width: 100%;
 }
 
-/* CAUTION : this mf#*? must be put here or else problems arise, proceed carefully! */
-/* TODO : Found a solution to use JS so that I care less about the cascade : I'll implement it later  */
-.hidden {
-  display: none;
-}
-
 @media (min-width: 768px) {
   .nav__hamburger {
     display: none;
   }
 
-  .nav__inner-wrapper {
+  .nav__wrapper {
     all: unset;
   }
 

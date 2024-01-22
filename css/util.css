@@ -17,3 +17,7 @@
 .debug-lv-4 {
   border: 1px solid gray;
 }
+
+.hide {
+  display: none;
+}
