@@ -13,30 +13,32 @@
   width: 9rem;
 }
 
-.header__hamburger {
+.nav__hamburger {
   min-height: 3rem;
   width: 3rem;
   cursor: pointer;
 }
 
-.header__menu {
+/* wraps the menu and the closer together to show/hide them together */
+.nav__inner-wrapper {
   min-height: 3rem;
   width: 100%;
   position: absolute;
+  left: 0;
   top: 3rem;
   display: flex;
   flex-direction: column;
   height: calc(100dvh - 3rem);
 }
 
-.menu__container {
+.nav__menu {
   min-height: 3rem;
   width: 100%;
   flex: 0 1 auto;
   cursor: pointer;
 }
 
-.menu__closer {
+.nav__closer {
   min-height: 3rem;
   width: 100%;
   flex: 1 1 auto;
@@ -49,27 +51,27 @@
   width: 100%;
 }
 
-/* Research list all the methods to hide something. */
 /* CAUTION : this mf#*? must be put here or else problems arise, proceed carefully! */
+/* TODO : Found a solution to use JS so that I care less about the cascade : I'll implement it later  */
 .hidden {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .header__hamburger {
+  .nav__hamburger {
     display: none;
   }
 
-  .header__menu {
+  .nav__inner-wrapper {
     all: unset;
   }
 
-  .menu__container {
+  .nav__menu {
     display: flex;
     gap: 2rem;
   }
 
-  .menu__closer {
+  .nav__closer {
     display: none;
   }
 }

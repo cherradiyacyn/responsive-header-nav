@@ -1,15 +1,16 @@
 // const name = document.querySelector(".BEM");
-const headerHamburger = document.querySelector(".header__hamburger");
-const headerMenu = document.querySelector(".header__menu");
-const menuContainer = document.querySelector(".menu__container");
-const menuCloser = document.querySelector(".menu__closer");
+const navHamburger = document.querySelector(".nav__hamburger");
+const navInnerWrapper = document.querySelector(".nav__inner-wrapper");
+const navMenu = document.querySelector(".nav__menu");
+const navCloser = document.querySelector(".nav__closer");
 
 // const handlerName = () => {};
-const handleHeaderMenu = () => {
-  headerMenu.classList.toggle("hidden");
+const handlenavInnerWrapper = () => {
+  navInnerWrapper.classList.toggle("hidden");
+  // alert("FIX IT LATER : this should not work in desktop version!");
 };
 
 // name.addEventListener("click", handlerName);
-headerHamburger.addEventListener("click", handleHeaderMenu);
-menuContainer.addEventListener("click", handleHeaderMenu);
-menuCloser.addEventListener("click", handleHeaderMenu);
+navHamburger.addEventListener("click", handlenavInnerWrapper);
+navMenu.addEventListener("click", handlenavInnerWrapper);
+navCloser.addEventListener("click", handlenavInnerWrapper);
